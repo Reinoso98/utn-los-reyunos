@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTN Los Reyunos</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-4">
+        <h1>UTN Los Reyunos</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="PUBLIC/VIEWS/sobre-nosotros.html">Sobre Nosotros</a><li>
+                    <li class="nav-item"><a class="nav-link" href="PUBLIC/VIEWS/alojamiento.html">Alojamiento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="PUBLIC/VIEWS/actividades.html">Actividades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container my-4">
+        <section id="inicio">
+            <div class="jumbotron text-center">
+                <h2>Bienvenidos a UTN Los Reyunos</h2>
+                <p>Descubre la combinación perfecta entre educación y recreación.</p>
+                <img src="PUBLIC/IMAGENES/LOGO  NOSOTROS.jpeg" class="img-fluid" alt="UTN Los Reyunos">
+            </div>
+        </section>
+
+        <!-- Sección de Video de Introducción -->
+        <section id="video-introduccion" class="text-center my-4">
+            <h2>Conocenos</h2>
+            <p>Conoce más sobre UTN Los Reyunos a través de nuestro video de introducción.</p>
+            <div class="embed-responsive embed-responsive-4by3" style="max-width: 560px; margin: 0 auto;">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=SUOkE2U8B58" allowfullscreen></iframe>
+            </section>
+        
+        
+        <section id="testimonios" class="my-4">
+            <h2>Testimonios</h2>
+            <p>Lee lo que nuestros visitantes tienen que decir sobre su experiencia en UTN Los Reyunos.</p>
+            <blockquote class="blockquote">
+                <p class="mb-0">"Una experiencia inolvidable. Perfecto para aprender y disfrutar de la naturaleza." - Ana García</p>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-0">"Los talleres educativos fueron muy interesantes y las actividades al aire libre fueron divertidas." - Luis Martínez</p>
+            </blockquote>
+        </section>
+
+        <!--Sección de Noticias y Eventos -->
+        <section id="noticias-eventos" class="my-4">
+            <h2>Noticias y Eventos</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="PUBLIC/IMAGENES/observatorio.png" alt="Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Evento Especial de Astronomía</h5>
+                        <p class="card-text">Únete a nuestro evento especial de observación astronómica el próximo mes. Más detalles dentro.</p>
+                        <a href="https://www.instagram.com/p/C9qkTaYqVIS/" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="PUBLIC/IMAGENES/taller de tecnologia.png" alt="Noticia 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nuevo Taller de Tecnología</h5>
+                        <p class="card-text">Anunciamos un nuevo taller sobre las últimas tecnologías en ingeniería. Inscríbete ahora.</p>
+                        <a href="https://www.eldiarioweb.com/2024/04/se-viene-club-tecnologico-el-taller-gratuito-de-la-utn/" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="PUBLIC/IMAGENES/kayak.png" alt="Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Competencia de Kayak</h5>
+                        <p class="card-text">Participa en nuestra emocionante competencia de kayak este verano. ¡Regístrate pronto!</p>
+                        <a href="https://diariosanrafael.com.ar/el-domingo-se-disputara-la-5o-edicion-de-la-regata-san-rafael/" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CONTACTOS-->
+        <section id="contacto" class="my-4">
+            <h2>Contacto</h2>
+            <p>Contáctanos para más información o para reservar tu estancia.</p>
+            <form action="submit_form.php" method="post" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="invalid-feedback">Por favor, ingrese un email válido.</div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+                    <div class="invalid-feedback">Por favor, ingrese su mensaje.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <p>O puedes llamarnos al +54 9 260 4567890</p>
+        </section>
+    </main>
+    
+    <footer class="bg-dark text-white text-center p-2">
+        <p>&copy; AGUSTIN REINOSO-POTRERO DIGITAL 2024-SAN RAFAEL</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="public/js/scripts.js"></script>
+</body>
+</html>
